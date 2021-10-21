@@ -5,7 +5,7 @@ from deepstack_sdk import ServerConfig, Detection
 
 
 # Configure deepstack api
-config = ServerConfig('http://deepstack_api:5000')
+config = ServerConfig('http://localhost:80')
 detection = Detection(config, name='actionnetv2')
 
 
