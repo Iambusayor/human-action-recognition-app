@@ -6,12 +6,14 @@ A flask app for human action recognition.
 You need to have docker installed on your local machine
 	
 ## Get started
-Install requirements file  
+* clone or download repository
+
+* Install requirements file  
 ```
 $ pip install -r requirements.txt
 ```
 
-#### Setup deepstack image  
+* Setup depstack image  
 For CPU
 ```
 $ sudo docker run  --name deepstack_api -v <path to the directory you cloned the repo into>/detector:/modelstore/detection -p 80:5000 deepquestai/deepstack
