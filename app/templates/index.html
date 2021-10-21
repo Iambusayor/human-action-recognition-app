@@ -1,0 +1,29 @@
+{% extends "base_template.html" %}
+
+{% block title %}Home{% endblock %} 
+
+{% block main %}
+<div class='container'>
+    <div class='row'>
+        <div class='col'>
+            <h1>Human action Reccognition</h1>
+            <article class='article'>
+                <p>Use AI driven solutions to detect/recognize human actions in pictures or videos. Under the hood we have a pretrained deepstack model trained on the ActionNet Dataset</p>
+                     Detectable actions are:
+                    <ul>
+                        <li>Calling</li>
+                        <li>Clapping</li>
+                        <li>Cycling</li>
+                        <li>Dancing</li>
+                        <li>Fighting</li>
+                        <li>Drinking</li>
+                        <li>Eating</li>
+                        <li>Etc.</li>
+                    </ul>
+            </article>
+            <a class="btn btn-outline-primary btn-lg" href="/upload-video">Get Started</a>
+        </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

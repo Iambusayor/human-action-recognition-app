@@ -1,0 +1,33 @@
+{% extends "base_template.html" %}
+
+{% block title %}Upload image{% endblock %}
+
+{% block main %}
+<div class='container'>
+    <div class='row'>
+        <div class='col'>
+            <h1>Upload video</h1>
+            <hr>
+
+            <form action="/upload-video" method="POST" , enctype="multipart/form-data">
+
+                <div class='form-group'>
+                    <label>Select video</label>
+                    <div class='custom-file'>
+                        <input type="file" , class="custom-file-input" name="video" id="video">
+                        <label class="custom-file-label" for="video">Select video...</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" aria-pressed="false">Upload video</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class='container'>
+    <button type="button" class="btn btn-outline-danger" disabled="disabled">Note!</button>
+    <article>It might take a while to finish loading depending on the file size. Be patient, as soon as the
+        preprocessing is done, a download instance will be created to allow you save the annotated video. </article>
+</div>
+{% endblock %}
